@@ -1,0 +1,240 @@
+h1 {
+  color: crimson;
+}
+
+h2 {
+  color: lightblue;
+  font-family: courier;
+}
+
+h3 {
+  padding: 20px 0px 0px 0px;
+}
+
+nav {
+  text-align: center;
+  background-color: red;
+  white-space: 100px;
+}
+
+a {
+  font-size: 20pt;
+  padding: 30px;
+}
+
+#contact a {
+  font-size: 15pt;
+  padding: 10px;
+}
+
+.intro hr {
+  height: 10px;
+  background-color: black;
+}
+
+#contact hr {
+  height: 10px;
+  background-color: black;
+}
+
+#AboutMe {
+  color: white;
+  text-align: center;
+
+}
+
+intro {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.intro2 {
+  flex: 50%;
+  height: 100%;
+  width: 100;
+}
+
+.skills {
+  flex: 50%;
+  height: 100%;
+  width: 100;
+}
+
+team {
+  display: flex;
+  flex-direction: row;
+}
+
+#team {
+  flex: 50%;
+  height: 100%;
+  width: 100;
+  
+}
+
+#me {
+  flex: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+#contact {
+  background-color: silver;
+  font-family: "Arial";
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+#contact ul{
+  list-style-type: none;
+}
+
+a:link {color: black;}
+a:hover {color: white;}
+a:visited {color: blue;}
+a:active {color: lime;}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  height: 100%
+}
+
+.header-item {
+  padding: 80px;
+  flex: 2;
+  font-family: cursive;
+  text-align: center;
+}
+
+.header-image {
+  flex: 1;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  background-color: silver;
+  font-family: "lucida calligraphy";
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.intro p {
+  padding: 30px;
+}
+
+footer {
+  background-color: whitesmoke;
+  width: 100%;
+  border-color: black;
+  border-width: 5px;
+  margin: 0;
+  text-align: right;
+}
+
+h5 {
+  padding: 20px;
+  font-size: 20pt;
+  text-align: center;
+  color: crimson;
+  font-family: "Lucida Handwriting";
+}
+
+ @media all and (max-width: 600px){
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-item {
+    flex: 1;
+    padding: 80px;
+    font-family: cursive;
+    text-align: center;
+  }
+
+  .header-image {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro2 {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .skills {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  team {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #team {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  #me {
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+pbody h1 {
+  text-align: center;
+}
+
+pmain {
+  background-color: black;
+  text-align: center;
+  color: aqua;
+}
+
+pfooter a{
+  text-align: center;
+  height: inherit;
+  width: inherit;
+}
+
+#footer {
+  text-align: center;
+
+}
+
+pfooter a:link {color: black;}
+pfooter a:hover {color: white;}
+pfooter a:visited {color: blue;}
+pfooter a:active {color: lime;}
