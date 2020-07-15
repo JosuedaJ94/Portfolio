@@ -238,3 +238,25 @@ pfooter a:link {color: black;}
 pfooter a:hover {color: white;}
 pfooter a:visited {color: blue;}
 pfooter a:active {color: lime;}
+
+form input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  text-align: justify;
+}
