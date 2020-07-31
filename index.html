@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,8 @@
 
 
   <body>
+
+    <!--header-->
     <header>
       <div class="header-item">
         <h1><strong>Joshua Mora</strong></h1>
@@ -17,31 +19,37 @@
       </div>
 
       <div class="header-image">
-        <img src="images/profilepic.jpg">
+        <img src="images/profilepic.jpg" alt="No Image">
       </div>
     </header>
 
     <main>
+      <!--nav bar-->
       <nav>
         <a href="#AboutMe">About Me</a>
         <a href="#contact">Contact Me</a>
         <a href="projects.html">Projects</a>
       </nav>
 
+      <!--introduction-->
       <section class="intro">
-        <h3><strong>An Introduction...<strong></h3>
+        <h3><strong>An Introduction...</strong></h3>
         <hr>
         <p>My name is Joshua Luis Mora, a proud citizen of San Antonio, Texas. I'm currently a field technician for Tri-Smart Solar; while at the same time, looking to advance my career in software.</p>
       </section>
       
+      <!--about me-->
       <section id="AboutMe">
         <h3><strong>A little more about me...</strong></h3>
         <hr>
-        <intro class="intro/skills">
+        <!--2 containers within container-->
+        <div class="intro/skills">
+          <!--intro section-->
           <div class="intro2">
             <p>I have always been fascinated by technology. So naturally, I wanted to pursue an education that would help me shape the world of tomorrow. At the University of Texas at San Antonio, I obtained a B.S. degree in <b>Computer Science</b> with a concentration in <b>Software Engineering</b>.</p>
           </div>
           <hr>
+          <!--skills section-->
           <div class="skills">
             <p>My education has given me the skills necessary to engineer software systems from front-to-back. I have mastered front-end and back-end languages such as:</p>
               <ul>
@@ -54,9 +62,10 @@
                 <li>Python</li>
                 </ul>
           </div>
-        </intro>
+        </div>
         <hr>
-        <team id="team/me">
+        <div id="team/me">
+          <!--team section-->
           <section id="team">
             <p>As a brother of Omega Delta Phi, I learned that teamwork is one of the most valuable keys to success. I look forward to working with my own team of professionals to provide software services to all customers. My ability to think ahead gives me a distinct advantage and allow for advanced leadership. We'll be able to offer our clients a range of services such as:</p>
               <ol>
@@ -66,12 +75,14 @@
               </ol>
           </section>
           <hr>
+          <!--me section-->
           <section id="me">
             <p>Whenever I get a little free time, I like to play video games online. Playing soccer and riding bikes are also some of my favorite activies. I also like to hang with my friends, usually going out to enjoy the city.
           </section>
-        </team>
+        </div>
       </section>
 
+      <!--contact section-->
       <section id="contact">
         <h3><strong>Contact Me</strong></h3>
         <hr>
@@ -81,10 +92,11 @@
           <li>Linked-In: <a href="www.linkedin.com/in/JoshuaMora94">www.linkedin.com/in/JoshuaMora94</a></li>
         </ul>
 
+        <!--contact form-->
         <div id="form">
           <fieldset>
             <legend>Send me a message...</legend>
-            <form action="josue_mx_2012@live.com" method="GET">
+            <form action="https://formspree.io/xbjzwlqg" method="POST">
               <label for="name">Full Name: </label>
               <input id="name" type="text" name="name" required>
               <label for="email">Email Address: </label>
@@ -92,7 +104,7 @@
               <label for="number">Contact Number: </label>
               <input id="number" type="text" name="number">
               <label for="message">Message: </label>
-              <textarea for="message" type="text" name="message" required></textarea>
+              <textarea id="message" name="message" required></textarea>
               <br>
               <button type="submit">Submit</button>
             </form>
@@ -103,6 +115,7 @@
       </section>
     </main>
 
+    <!--footer-->
     <footer>
       <h5>"The measure of a man is what he does with Power" - Plato</h5>
       <h6>Created by Joshua Mora</h6>

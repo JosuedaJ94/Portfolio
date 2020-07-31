@@ -1,3 +1,4 @@
+/*Style the titles*/
 h1 {
   color: crimson;
 }
@@ -11,22 +12,27 @@ h3 {
   padding: 20px 0px 0px 0px;
 }
 
-nav {
+h5 {
+  padding: 20px;
+  font-size: 20pt;
   text-align: center;
-  background-color: red;
-  white-space: 100px;
+  color: crimson;
+  font-family: "Lucida Handwriting";
 }
 
-a {
-  font-size: 20pt;
-  padding: 30px;
-}
+/*style the links*/
+
+a:link {color: black;}
+a:hover {color: white;}
+a:visited {color: blue;}
+a:active {color: lime;}
+
 
 #contact a {
   font-size: 15pt;
   padding: 10px;
 }
-
+/*style the hrs*/
 .intro hr {
   height: 10px;
   background-color: black;
@@ -36,15 +42,76 @@ a {
   height: 10px;
   background-color: black;
 }
+/*style the containers*/
+/*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-item {
+  flex: 1;
+  font-family: cursive;
+  text-align: center;
+}
+
+.header-image {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/*style the main body*/
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+main {
+  flex-direction: column;
+}
+
+/*style the nav bar*/
+nav {
+  flex: 1;
+  text-align: center;
+  background-color: red;
+  size: 20pt;
+  
+}
+
+nav a {
+  padding: 10px;
+  size: 20pt;
+}
 
 #AboutMe {
   color: white;
   text-align: center;
+  flex: 1;
 
 }
 
+.intro {
+  background-color: silver;
+  font-family: "lucida calligraphy";
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.intro p {
+  padding: 30px;
+}
+
 intro {
-  display: flex;
+  flex:1;
   flex-direction: row;
   height: 100%;
 }
@@ -80,58 +147,50 @@ team {
 }
 
 #contact {
+  flex: 1;
   background-color: silver;
   font-family: "Arial";
   width: 100%;
   text-align: center;
 }
 
-body {
-  background-color: black;
-}
 
 #contact ul{
+  text-align: left;
   list-style-type: none;
-}
-
-a:link {color: black;}
-a:hover {color: white;}
-a:visited {color: blue;}
-a:active {color: lime;}
-
-header {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  height: 100%
-}
-
-.header-item {
-  padding: 80px;
-  flex: 2;
-  font-family: cursive;
-  text-align: center;
-}
-
-.header-image {
-  flex: 1;
+  width: 100%;
   padding: 10px;
-  width: 100%;
-  height: 100%;
+  size: 13pt;
 }
 
-.intro {
-  background-color: silver;
-  font-family: "lucida calligraphy";
-  width: 100%;
-  height: 100%;
-  text-align: center;
+#contact ul a {
+  size: 14pt;
 }
 
-.intro p {
-  padding: 30px;
+/*style the form*/
+form input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  
 }
 
+form label {
+  display: flex;
+  flex-direction: column;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  text-align: justify;
+}
+
+/*footer*/
 footer {
   background-color: whitesmoke;
   width: 100%;
@@ -141,18 +200,40 @@ footer {
   text-align: right;
 }
 
-h5 {
-  padding: 20px;
-  font-size: 20pt;
+/*project page*/
+pbody h1 {
   text-align: center;
-  color: crimson;
-  font-family: "Lucida Handwriting";
 }
 
- @media all and (max-width: 600px){
+pmain {
+  background-color: black;
+  text-align: center;
+  color: aqua;
+}
+
+pfooter a{
+  text-align: center;
+  height: inherit;
+  width: inherit;
+}
+
+#footer {
+  text-align: center;
+
+}
+
+pfooter a:link {color: red;}
+pfooter a:hover {color: white;}
+pfooter a:visited {color: blue;}
+pfooter a:active {color: lime;}
+
+
+/*tablet sized screen*/
+ @media all and (min-width: 480px){
   header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
   }
 
   .header-item {
@@ -164,7 +245,7 @@ h5 {
 
   .header-image {
     flex: 1;
-    padding: 10px;
+    padding: 30px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -212,51 +293,28 @@ h5 {
     text-align: center;
   }
 }
+/*computer sized screen*/
+@media all and (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
 
-pbody h1 {
-  text-align: center;
+  .header-item {
+    flex: 2;
+    padding: 80px;
+    font-family: cursive;
+    text-align: center;
+  }
+
+  .header-image {
+    flex: 1;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
 }
 
-pmain {
-  background-color: black;
-  text-align: center;
-  color: aqua;
-}
 
-pfooter a{
-  text-align: center;
-  height: inherit;
-  width: inherit;
-}
-
-#footer {
-  text-align: center;
-
-}
-
-pfooter a:link {color: black;}
-pfooter a:hover {color: white;}
-pfooter a:visited {color: blue;}
-pfooter a:active {color: lime;}
-
-form input {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  
-}
-
-form label {
-  display: flex;
-  flex-direction: column;
-
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-#form {
-  text-align: justify;
-}
