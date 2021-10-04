@@ -10,6 +10,7 @@ h2 {
 
 h3 {
   padding: 20px 0px 0px 0px;
+  color: greenyellow;
 }
 
 h5 {
@@ -22,7 +23,7 @@ h5 {
 
 /*style the links*/
 
-a:link {color: black;}
+a:link {color: yellow;}
 a:hover {color: white;}
 a:visited {color: blue;}
 a:active {color: lime;}
@@ -201,14 +202,44 @@ footer {
 }
 
 /*project page*/
+
+pmain {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  background-color: black;
+  text-align: left;
+  text-align: justify;
+  color: aqua;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  
+}
 pbody h1 {
   text-align: center;
 }
 
-pmain {
-  background-color: black;
-  text-align: center;
-  color: aqua;
+
+
+.description {
+  flex: 50%;
+  height: 50%;
+  width: 50%;
+}
+
+.screenshot {
+  flex: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.screenshot img {
+  height: fit-content;
+  width: 100%;
 }
 
 pfooter a{
